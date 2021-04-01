@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Twitter search query here"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/yellow">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tagged Searches"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            android:textStyle="bold"/>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="6"
+            android:columnCount="2"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <Button android:text="AndroidFP" android:layout_width="200dp"/>
+            <Button android:text="Edit" android:layout_gravity="right" />
+            <Button android:text="Deitel" android:layout_width="200dp"/>
+            <Button android:text="Edit" android:layout_gravity="right" />
+            <Button android:text="Google" android:layout_width="200dp"/>
+            <Button android:text="Edit" android:layout_gravity="right" />
+            <Button android:text="iPhoneFP" android:layout_width="200dp"/>
+            <Button android:text="Edit" android:layout_gravity="right" />
+            <Button android:text="JavaFP" android:layout_width="200dp"/>
+            <Button android:text="Edit" android:layout_gravity="right" />
+            <Button android:text="JavaHTP" android:layout_width="200dp"/>
+            <Button android:text="Edit" android:layout_gravity="right" />
+        </GridLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Clear Tags"/>
+</LinearLayout>
